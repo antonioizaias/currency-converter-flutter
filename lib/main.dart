@@ -109,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: FutureBuilder<Map>(
         future: _getData(),
-        builder: (context, snapshot) {
+        builder: (BuildContext context, AsyncSnapshot snapshot) {
           switch (snapshot.connectionState) {
             case ConnectionState.none:
             case ConnectionState.waiting:
